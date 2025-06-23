@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Modern Twitter UI clone using Tailwind CSS. Fully responsive. design">
+
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white w-screen h-screen overflow-x-hidden flex justify-center items-start below-525:justify-start">
+    <div class="grid grid-cols-[318px_599.25px_448.75px] below-925:grid-cols-[77px_auto] below-925:justify-start below-1365:grid-cols-[77px_52.5%_auto] below-525:grid-cols-[auto] below-525:justify-start justify-center w-fit below-1365:justify-start below-450:grid-cols-[443px]">
+        <div class="flex justify-between flex-col sticky top-0 h-[calc(100vh-50px)] items-center below-525:hidden">
+            <ul class="flex flex-col invert">
+                <li class="px-6 py-[0.6rem] w-fit mt-[5px]">
+                    <a href="#" class="flex items-center mb-1">
+                        <img src="svg/logo.svg" alt="Twitter Logo" width="29px">
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5 mt-[0.10rem]">
+                        <img src="svg/home.svg" alt="Home" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Home</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/explore.svg" alt="Explore" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Explore</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/notifications.svg" alt="Notifications" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Notifications</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/message.svg" alt="Messages" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Messages</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/grok.svg" alt="Grok (Explore AI)" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Grok</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/communities.svg" alt="Communities" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Communities</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/logo.svg" alt="Twitter Logo" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Premium</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/profile.svg" alt="Profile" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">Profile</p>
+                    </a>
+                </li>
+                <li class="hover:bg-gray-200 px-6 py-[0.6rem] w-fit rounded-full">
+                    <a href="#" class="flex items-center space-x-5">
+                        <img src="svg/more.svg" alt="More Options" width="26px">
+                        <p class="text-[1.28rem] font-[500] text-gray-800 below-1365:hidden">More</p>
+                    </a>
+                </li>
+                <li class="px-6 py-[0.6rem] rounded-full below-1365:hidden">
+                    <a href="#" class="bg-black  px-24 py-3 text-lg rounded-full inline-block text-center">Post</a>
+                </li>
+            </ul>
+            <div class="flex space-x-3 relative top-[1.25rem] cursor-pointer hover:bg-[#1a1814] px-6 py-[0.6rem] w-fit rounded-full below-1365:hidden">
+                <img class="bg-white rounded-full flex justify-center items-center h-11"
+                    src="img/my_profile.jpg" alt="profile">
+                <div>
+                    <p class="text-base font-bold">Its Siphan</p>
+                    <p class="text-sm text-[#949ab0c9] before:content-['@']">Its_Siphan</p>
+                </div>
+                <a class="text-2xl pl-16">...</a>
+            </div>
+        </div>
+        <div class="w-full border-x border-[#b0ab94c9] border-solid below-450:overflow:hidden">
+            <div
+                class="flex border-b border-solid border-[#b0ab94c9] bg-[#000000c7] backdrop-blur-sm bac sticky top-0 z-10">
+                <div class="flex justify-center items-start w-full hover:bg-[#1A191A]">
+                    <a href="#"
+                        class="text-[rgb(157,157,157)] text-[0.87rem] font-[500] w-full flex h-[3.30rem] justify-center items-center">For
+                        you</a>
+                </div>
+                <div class="flex justify-center items-start w-full hover:bg-[#1A191A]">
+                    <a href="#"
+                        class="text-[rgb(157,157,157)] text-[0.87rem] w-full font-[500] flex h-[3.30rem] justify-center items-center underline underline-offset-[17px] decoration-[4px] decoration-[#1D9BF0]">Following</a>
+                </div>
+            </div>
+            <div class="second">
+                <div class="post px-4 py-4 border-b border-solid border-[#b0ab94c9]">
+                    <div class="imgandtitle cursor-pointer flex items-center space-x-3 text-[1.28rem] font-[500]">
+                        <img class="bg-white mb-6 rounded-full flex justify-center items-center h-11"
+                            src="img/my_profile.jpg" alt="profile">
+                        <textarea class="w-full h-14 resize-none outline-none bg-black text-white"
+                            placeholder="What's happening?">
+</textarea>
+                    </div>
+                    <div class="second cursor-pointer flex space-x-4 w-full items-center h-5">
+                        <img class="ml-[3.5rem]" width="20px" src="svg/media.svg" alt="Media">
+                        <img width="20px" src="svg/gif.svg" alt="GIF">
+                        <img width="20px" src="svg/encGrok.svg" alt="Grok">
+                        <img width="20px" src="svg/poll.svg" alt="Poll">
+                        <img width="20px" src="svg/emoji.svg" alt="Emoji">
+                        <img width="20px" src="svg/schudule.svg" alt="Schedule">
+                        <img width="20px" src="svg/location.svg" alt="Location">
+                        <div class="flex-grow"></div>
+                        <a
+                            class="font-medium text-slate-900 pt-[0.20rem] pb-[0.30rem] mb-1 px-4 text-lg rounded-full text-center bg-white">Post</a>
+                    </div>
+                </div>
+                <p class="text-[#1D9BF0] py-3 border-b border-solid cursor-pointer border-[#b0ab94c9] text-center">Show 28
+                    post</p>
+            </div>
+
+            <div class="post1 cursor-pointer border-b border-solid border-[#b0ab94c9]">
+                <div class="SecondPostshared p-[15px]">
+                    <div class="main w-full flex justify-between">
+                        <div class="first flex items-start gap-2 w-full overflow-x-hidden text-ellipsis">
+                            <img class="bg-black rounded-full" src="img/my_profile.jpg" alt="profile Ico"
+                                width="44px">
+                            <div class="texts overflow-x-hidden">
+                                <div class="tx1 flex gap-1">
+                                    <p class="font-semibold hover:underline">Its Siphan</p>
+                                    <img src="svg/Twitter_Verified_Badge.svg" alt="blue tick" width="20px">
+                                    <p class="text-[#949ab0c9] hover:underline before:content-['@'] after:content-['·']">its_siphan </p>
+                                    <p class="text-[#949ab0c9]">10h</p>
+                                </div>
+                                <div class="tx2">Programmer eyes 😂</div>
+                            </div>
+                        </div>
+                        <div class="second flex items-start h-fit">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <img class="invert" src="svg/grok.svg" alt="grok badge" width="20px">
+                            </div>
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <a class="text-2xl text-[#949ab0c9] -mt-[14px]">...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-solid border-[#b0ab94c9] overflow-hidden rounded-2xl ml-[65px] w-[calc(100%-82px)] below-525:ml-[42px]">
+                    <img class="w-full" src="img/eyes meme.jfif" alt="post info">
+                </div>
+                <div class="postinfo ml-[65px] flex justify-between pr-[15px] py-[7px] below-1365:flex-wrap below-1365:h-[48.98px] below-1365:overflow-hidden below-450:ml-[39px]">
+                    <div class="first flex justify-center items-center gap-[35px]">
+                        <div class="flex justify-center items-center cursor-pointer group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/repliy.svg" alt="reply badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">1.2k</p>
+                        </div>
+                        <div class="flex cursor-pointer justify-center items-center group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#071a14] transition-colors duration-200">
+                                <img src="svg/repost.svg" alt="repost badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#00ba7c] transition-colors duration-200">8.2k</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#200914] transition-colors duration-200">
+                                <img src="svg/like.svg" alt="like badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#f7187f] transition-colors duration-200">16k</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/view.svg" alt="views badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">281k</p>
+                        </div>
+                    </div>
+                    <div class="second flex">
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/saved.svg" alt="saved ico"  width="18px">
+                        </div>
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/uploadAction.svg" alt="upload ico"  width="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post2 cursor-pointer border-b border-solid border-[#b0ab94c9]">
+                <div class="SecondPostshared p-[15px]">
+                    <div class="main w-full flex justify-between">
+                        <div class="first flex items-start gap-2 w-full overflow-x-hidden text-ellipsis">
+                            <img class="bg-black rounded-full" src="img/Gina acosta.jpg" alt="profile Ico"
+                                width="44px">
+                            <div class="texts overflow-x-hidden">
+                                <div class="tx1 flex gap-1">
+                                    <p class="font-semibold hover:underline">Gina Acosta</p>
+                                    <img src="svg/Twitter_Verified_Badge.svg" alt="blue tick" width="20px">
+                                    <p class="text-[#949ab0c9] hover:underline before:content-['@'] after:content-['·']">ginacostag_ </p>
+                                    <p class="text-[#949ab0c9]">21h</p>
+                                </div>
+                                <div class="tx2">20 Best Movies With Plot Twists You'll Never See Coming
+<br>
+[🔖 Bookmark for later]</div>
+                            </div>
+                        </div>
+                        <div class="second flex items-start h-fit">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <img class="invert" src="svg/grok.svg" alt="grok badge" width="20px">
+                            </div>
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <a class="text-2xl text-[#949ab0c9] -mt-[14px]">...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-solid border-[#b0ab94c9] overflow-hidden rounded-2xl ml-[65px] w-[calc(100%-82px)] below-525:ml-[42px]">
+                    <img class="w-full" src="img/Gina acosta - post 1.jpg" alt="post info">
+                </div>
+                <div class="postinfo ml-[65px] flex justify-between pr-[15px] py-[7px] below-1365:flex-wrap below-1365:h-[48.98px] below-1365:overflow-hidden below-450:ml-[39px]">
+                    <div class="first flex justify-center items-center gap-[35px]">
+                        <div class="flex justify-center items-center cursor-pointer group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/repliy.svg" alt="reply badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">1.2k</p>
+                        </div>
+                        <div class="flex cursor-pointer justify-center items-center group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#071a14] transition-colors duration-200">
+                                <img src="svg/repost.svg" alt="repost badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#00ba7c] transition-colors duration-200">8.2k</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#200914] transition-colors duration-200">
+                                <img src="svg/like.svg" alt="like badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#f7187f] transition-colors duration-200">16k</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/view.svg" alt="views badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">281k</p>
+                        </div>
+                    </div>
+                    <div class="second flex">
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/saved.svg" alt="saved ico"  width="18px">
+                        </div>
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/uploadAction.svg" alt="upload ico"  width="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post3 cursor-pointer border-b border-solid border-[#b0ab94c9]">
+                <div class="SecondPostshared p-[15px]">
+                    <div class="main w-full flex justify-between">
+                        <div class="first flex items-start gap-2 w-full overflow-x-hidden text-ellipsis">
+                            <img class="bg-black rounded-full" src="img/microsoft.jpg" alt="profile Ico"
+                                width="44px">
+                            <div class="texts overflow-x-hidden">
+                                <div class="tx1 flex gap-1">
+                                    <p class="font-semibold hover:underline">Microsoft</p>
+                                    <img src="svg/Twitter_Verified_Badge.svg" alt="blue tick" width="20px">
+                                    <p class="text-[#949ab0c9] hover:underline before:content-['@'] after:content-['·']">Microsoft </p>
+                                    <p class="text-[#949ab0c9] hover:underline">May 20</p>
+                                </div>
+                                <div class="tx2">We’re building AI agents that reason, remember, and get things done. We’re showing how devs are using GitHub and M365 to build agents that code, triage, summarize, and more. 
+                                    <br><br>
+Here’s what’s new: https://msft.it/6008SjqeC</div>
+                            </div>
+                        </div>
+                        <div class="second flex items-start h-fit">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <img class="invert" src="svg/grok.svg" alt="grok badge" width="20px">
+                            </div>
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                                <a class="text-2xl text-[#949ab0c9] -mt-[14px]">...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-solid border-[#b0ab94c9] overflow-hidden rounded-2xl ml-[65px] w-[calc(100%-82px)] below-525:ml-[42px]">
+                    <img class="w-full" src="img/Microsoft post.jpg" alt="post info">
+                </div>
+                <div class="postinfo ml-[65px] flex justify-between pr-[15px] py-[7px] below-1365:flex-wrap below-1365:h-[48.98px] below-1365:overflow-hidden below-450:ml-[39px]">
+                    <div class="first flex justify-center items-center gap-[35px]">
+                        <div class="flex justify-center items-center cursor-pointer group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/repliy.svg" alt="reply badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">336</p>
+                        </div>
+                        <div class="flex cursor-pointer justify-center items-center group">
+                            <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#071a14] transition-colors duration-200">
+                                <img src="svg/repost.svg" alt="repost badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#00ba7c] transition-colors duration-200">198</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#200914] transition-colors duration-200">
+                                <img src="svg/like.svg" alt="like badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#f7187f] transition-colors duration-200">769</p>
+                        </div>
+                        <div class="flex justify-center items-center group cursor-pointer">
+                            <div class="hover:bg-[#071a14] flex justify-center items-center w-[35px] h-[35px] rounded-full group-hover:bg-[#1d9bf0] transition-colors duration-200">
+                                <img src="svg/view.svg" alt="views badge" width="20px">
+                            </div>
+                            <p class="text-[#949ab0c9] group-hover:text-[#1d9bf0] transition-colors duration-200">828k</p>
+                        </div>
+                    </div>
+                    <div class="second flex">
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/saved.svg" alt="saved ico"  width="18px">
+                        </div>
+                        <div class="flex justify-center items-center w-[35px] h-[35px] rounded-full hover:bg-[#6726684d]">
+                            <img src="svg/uploadAction.svg" alt="upload ico"  width="20px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="bg-black flex flex-col space-y-3 items-center w-[390px] pl-[45px] below-925:hidden">
+            <div class="bg-black w-[calc(100%+1px)] h-[3.40rem] flex justify-center sticky top-0 z-10 mr-[27px] pr-[0] below-1365:pr-0 below-1365:mr-[28px]">
+                <div class="m-1 sticky flex justify-center w-[346px] below-1365:pr[30px]">
+                    <input type="text" placeholder="Search"
+                        class="bg-transparent focus:outline-none border border-white border-solid text-white p-[0.6rem] pl-9 pr-[8rem] rounded-full">
+                    <img class="absolute left-[0.8rem] top-[0.85rem] invert" src="svg/explore.svg"
+                        alt="explore icon" width="20px">
+                </div>
+            </div>
+            <div class="space-y-4 pr-7">
+                <div class="p-[15px] flex flex-col gap-4  border border-solid border-[#b0ab94c9] rounded-xl">
+                    <strong class="text-xl text-white">What’s happening</strong>
+                    <div class="flex space-x-2">
+                        <div class="w-[79px] h-[79px] cursor-pointer">
+                            <img class="flex h-full object-cover rounded-2xl" src="img/wwe speed.jfif" alt="wwe badge">
+                        </div>
+                        <div class="text cursor-pointer">
+                            <p class="text-[16px] font-medium">WWE Speed</p>
+                            <p class="text-[#949ab0c9]">Live</p>
+                        </div>
+                    </div>
+                    <div class="texts1">
+                        <p class="text-sm text-[#949ab0c9]">Entertainment · Trending</p>
+                        <p class="text-[16px] font-medium">#Karuppu</p>
+                        <p class="text-sm text-[#949ab0c9]">3.7K posts</p>
+                    </div>
+                    <div class="texts1">
+                        <p class="text-sm text-[#949ab0c9]">Politics · Trending</p>
+                        <p class="text-[16px] font-medium">#Khamenei</p>
+                        <p class="text-sm text-[#949ab0c9]">21.3K posts</p>
+                    </div>
+
+                    <div class="texts1">
+                        <p class="text-sm text-[#949ab0c9]">Trending in India</p>
+                        <p class="text-[16px] font-medium">#IranVsIsrael</p>
+                        <p class="text-sm text-[#949ab0c9]">95.4K posts</p>
+                    </div>
+
+                    <div class="texts1">
+                        <p class="text-sm text-[#949ab0c9]">Sports · Trending</p>
+                        <p class="text-[16px] font-medium">#INDvsENG</p>
+                        <p class="text-sm text-[#949ab0c9]">3,379 posts</p>
+                    </div>
+                    <p class="text-[#1D9BF0] cursor-pointer">Show more</p>
+                </div>
+                <div class="text border border-solid border-[#b0ab94c9] rounded-xl flex space-y-2 flex-col p-3">
+                    <strong class="text-xl text-white">Subscribe to Premium</strong>
+                    <p class="w-80 text-white">Subscribe to unlock new features and if eligible, receive a share of
+                        revenue.
+                    </p>
+                    <a href="#"
+                        class="bg-[#1D9BF0] font-medium text-white rounded-full px-5 pt-[0.30rem] pb-[0.35rem] w-fit">Subscribe</a>
+                </div>
+                <div class="p-[15px] border border-solid border-[#b0ab94c9] rounded-xl">
+                    <strong class="text-xl text-white">Who to follow</strong>
+                    <ul class="mt-4 space-y-5 cursor-pointer">
+                        <li class="flex justify-between items-center gap-20">
+                            <div class="first flex space-x-3">
+                                <img class="bg-white rounded-full flex justify-center items-center h-11"
+                                    src="img/Elon musk.jpg" alt="profile">
+                                <div class="userinfo">
+                                    <p class="text-white">Elon Musk</p>
+                                    <p class="before:content-['@'] text-[#949ab0c9]">elonmusk</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="font-bold text-slate-900 px-5 py-2 text-sm rounded-full text-center bg-white">Follow</a>
+                        </li>
+                        <li class="flex justify-between items-center gap-20">
+                            <div class="first flex space-x-3">
+                                <img class="bg-white rounded-full flex justify-center items-center h-11"
+                                    src="img/microsoft.jpg" alt="profile">
+                                <div class="userinfo">
+                                    <p class="text-white">Microsoft</p>
+                                    <p class="before:content-['@'] text-[#949ab0c9]">Microsoft</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="font-bold text-slate-900 px-5 py-2 text-sm rounded-full text-center bg-white">Follow</a>
+                        </li>
+                        <li class="flex justify-between items-center gap-20">
+                            <div class="first flex space-x-3">
+                                <img class="bg-white rounded-full flex justify-center items-center h-11"
+                                    src="img/Google.jpg" alt="profile">
+                                <div class="userinfo">
+                                    <p class="text-white">Google</p>
+                                    <p class="before:content-['@'] text-[#949ab0c9]">Google</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="font-bold text-slate-900 px-5 py-2 text-sm rounded-full text-center bg-white">Follow</a>
+                        </li>
+                        <p class="text-[#1D9BF0] cursor-pointer">Show more</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-sm text-[#949ab0c9] flex flex-wrap gap-2">
+                <a href="#" class="text-xs hover:underline">Terms of Service</a>
+                <span>|</span>
+                <a href="#" class="text-xs hover:underline">Privacy Policy</a>
+                <span>|</span>
+                <a href="#" class="text-xs hover:underline">Cookie Policy</a>
+                <span>|</span>
+                <a href="#" class="text-xs hover:underline">Accessibility</a>
+                <span>|</span>
+                <a href="#" class="text-xs hover:underline">Ads info</a>
+                <span>|</span>
+                <a href="#" class="text-xs hover:underline">More&nbsp;···</a>
+                <p class="text-xs text-[#949ab0c9] mb-20">©2025 X Corp.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-black cursor-pointer fixed bottom-0 right-0 p-3 rounded-2xl outline outline-1 outline-[#ffffff26] mb-3 mr-5 shadow-md shadow-[#ffffff7d] below-925:hidden">
+        <img class="invert" src="svg/grok.svg" alt="grok help" width="35px">
+    </div>
+</body>
+
+</html>
